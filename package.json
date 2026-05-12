@@ -6,9 +6,10 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist --dotfiles",
     "dev": "tsx server.ts",
     "build": "vite build",
+    "postbuild": "cp CNAME dist/CNAME",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
