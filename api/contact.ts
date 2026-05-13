@@ -30,7 +30,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Yoga Sorrento <onboarding@resend.dev>',
+      from: 'Yoga Sorrento <website@yogasorrento.it>',
       to: ['info@yogasorrento.it'],
       subject: `New Inquiry for yogasorrento.it from ${escapeHtml(String(name))}`,
       html: `

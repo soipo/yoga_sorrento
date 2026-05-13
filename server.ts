@@ -37,7 +37,7 @@ async function startServer() {
     try {
       const client = getResend();
       const { data, error } = await client.emails.send({
-        from: 'Yoga Sorrento <onboarding@resend.dev>', // Resend requires a verified domain or onboarding address
+        from: 'Yoga Sorrento <website@yogasorrento.it>', // Resend requires a verified domain or onboarding address
         to: ['info@yogasorrento.it'], // Sending to the user's email
         subject: `New Inquiry for yogasorrento.it from ${name}`,
         html: `
